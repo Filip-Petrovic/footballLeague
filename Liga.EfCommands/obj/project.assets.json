@@ -3635,11 +3635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Filip\\source\\repos\\FudbalskaLiga\\Liga.EfCommands\\Liga.EfCommands.csproj",
+      "projectUniqueName": "C:\\Users\\Filip\\Documents\\GitHub\\proba\\Liga.EfCommands\\Liga.EfCommands.csproj",
       "projectName": "Liga.EfCommands",
-      "projectPath": "C:\\Users\\Filip\\source\\repos\\FudbalskaLiga\\Liga.EfCommands\\Liga.EfCommands.csproj",
+      "projectPath": "C:\\Users\\Filip\\Documents\\GitHub\\proba\\Liga.EfCommands\\Liga.EfCommands.csproj",
       "packagesPath": "C:\\Users\\Filip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Filip\\source\\repos\\FudbalskaLiga\\Liga.EfCommands\\obj\\",
+      "outputPath": "C:\\Users\\Filip\\Documents\\GitHub\\proba\\Liga.EfCommands\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3658,14 +3658,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Filip\\source\\repos\\FudbalskaLiga\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Filip\\source\\repos\\FudbalskaLiga\\Application\\Application.csproj"
+            "C:\\Users\\Filip\\Documents\\GitHub\\proba\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Filip\\Documents\\GitHub\\proba\\Application\\Application.csproj"
             },
-            "C:\\Users\\Filip\\source\\repos\\FudbalskaLiga\\Liga.DataAccess\\Liga.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Filip\\source\\repos\\FudbalskaLiga\\Liga.DataAccess\\Liga.DataAccess.csproj"
+            "C:\\Users\\Filip\\Documents\\GitHub\\proba\\Liga.DataAccess\\Liga.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Filip\\Documents\\GitHub\\proba\\Liga.DataAccess\\Liga.DataAccess.csproj"
             },
-            "C:\\Users\\Filip\\source\\repos\\FudbalskaLiga\\Liga.Domain\\Liga.Domain.csproj": {
-              "projectPath": "C:\\Users\\Filip\\source\\repos\\FudbalskaLiga\\Liga.Domain\\Liga.Domain.csproj"
+            "C:\\Users\\Filip\\Documents\\GitHub\\proba\\Liga.Domain\\Liga.Domain.csproj": {
+              "projectPath": "C:\\Users\\Filip\\Documents\\GitHub\\proba\\Liga.Domain\\Liga.Domain.csproj"
             }
           }
         }

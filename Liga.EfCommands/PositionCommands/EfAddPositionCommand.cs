@@ -14,7 +14,7 @@ namespace Liga.EfCommands
         public EfAddPositionCommand(LigaContext context) : base(context)
         {
         }
-
+        fff
         public void Execute(PositionDto request)
         {
             if (Context.Positions.Any(p => p.Name.ToLower() == request.Name.ToLower()))
