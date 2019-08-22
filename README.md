@@ -1,4 +1,4 @@
 *School project*
 
-Football league \t
+Football league 
 C#/ASP.NET/REST FULL API
