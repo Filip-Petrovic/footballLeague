@@ -1,0 +1,438 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Controllers.CityController.Get(Application.Searches.CitySearch)">
+             <summary>
+             Dohvata sve gradove, uz mogucnost pretrage
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET
+                 {
+                    "Name": "Paracin",
+                    "PostalCode": 35250
+                 }
+            
+             </remarks>
+             <response code="200">Vraca trazene gradove</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.CityController.Get(System.Int32)">
+            <summary>
+            Dohvata grad po id-u.
+            </summary>
+            <response code="200">Vraca trazeni grad</response>
+            <response code="404">Ako ne postoji grad sa tim id-om</response> 
+            <response code="500">Serverska greska</response>
+        </member>
+        <member name="M:Api.Controllers.CityController.Post(Application.DataTransfer.CityDto)">
+             <summary>
+             Dodavanje novog grada
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST 
+                 {
+                    
+                    "Name": "Paracin",
+                    "PostalCode": 35250
+                 }
+            
+             </remarks>
+             <response code="201">Dodaje novi grad</response>
+             <response code="409">Grad sa tim imenom vec postoji</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.CityController.Put(System.Int32,Application.DataTransfer.CityDto)">
+             <summary>
+             Izmena grada
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT 
+                 {
+                    "Name": "Paracin",
+                    "PostalCode": 35250
+                 }
+            
+             </remarks>
+             <response code="201">menja grad</response>
+             <response code="404">grad sa tim id-om nepostoji</response>
+             <response code="409"> grad sa tim imenom ili postalCode-om vec postoji </response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.CityController.Delete(System.Int32)">
+            <summary>
+            Brise grad
+            </summary>
+            <response code="201">Brise grad</response>
+            <response code="404">grad sa tim id-om ne postoji</response>
+            <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.ClubController.Get(Application.Searches.ClubSearch)">
+             <summary>
+             Dohvata sve klubove, uz mogucnost pretrage
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET
+                 {
+                    "Name": "Jedinstvo",
+                    "CityId": 2,
+                    "LeagueId": 1
+                 }
+            
+             </remarks>
+             <response code="200">Vraca trazene klubove</response>
+             <response code="500">Serverska greska</response>
+        </member>
+        <member name="M:Api.Controllers.ClubController.Get(System.Int32)">
+            <summary>
+            Dohvata klub po id-u.
+            </summary>
+            <response code="200">Vraca trazeni klub</response>
+            <response code="404">Ako ne postoji klub sa tim id-om</response> 
+            <response code="500">Serverska greska</response>
+        </member>
+        <member name="M:Api.Controllers.ClubController.Post(Application.DataTransfer.ClubDto)">
+             <summary>
+             Dodavanje novog kluba
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST 
+                 {
+                    "Name": "Jedinstvo",
+                    "CityId": 2,
+                    "LeagueId": 1
+                 }
+            
+             </remarks>
+             <response code="201">Dodaje novog kluba</response>
+             <response code="404">Grad ili liga ne postoji</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.ClubController.Put(System.Int32,Application.DataTransfer.ClubDto)">
+             <summary>
+             Izmena kluba
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT 
+                 {
+                    "Name": "Jedinstvo",
+                    "CityId": 2,
+                    "LeagueId": 1
+                 }
+            
+             </remarks>
+             <response code="201">Dodaje novu ligu</response>
+             <response code="404">klub sa tim id-om nepostoji</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.ClubController.Delete(System.Int32)">
+            <summary>
+            Brise club
+            </summary>
+            <response code="201">Brise club</response>
+            <response code="404">club sa tim id-om ne postoji</response>
+            <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.LeagueController.Get(Application.Searches.LeagueSearch)">
+             <summary>
+             Dohvata sve lige, uz mogucnost pretrage
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET
+                 {
+                    "Name": "Jelen Super liga",
+                    "Lever": "1"
+                 }
+            
+             </remarks>
+             <response code="200">Vraca trazene lige</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.LeagueController.Get(System.Int32)">
+            <summary>
+            Dohvata ligu po id-u.
+            </summary>
+            <response code="200">Vraca trazenu ligu</response>
+            <response code="404">Ako ne postoji liga sa tim id-om</response> 
+            <response code="500">Serverska greska</response>
+        </member>
+        <member name="M:Api.Controllers.LeagueController.Post(Application.DataTransfer.LeagueDto)">
+             <summary>
+             Dodavanje nove lige
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST 
+                 {
+                    "FirstName": "Filip",
+                    "LastName": "Petrovic",
+                    "RefereesId": [1,2,5]
+                 }
+            
+             </remarks>
+             <response code="201">Dodaje novu ligu</response>
+             <response code="404">Sudija ne postoji</response>
+             <response code="409">Liga sa tim imenom vec postoji</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.LeagueController.Put(System.Int32,Application.DataTransfer.LeagueDto)">
+             <summary>
+             Izmenalige
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT 
+                 {
+                    "FirstName": "Filip",
+                    "LastName": "Petrovic"
+                 }
+            
+             </remarks>
+             <response code="201">Dodaje novu ligu</response>
+             <response code="409">Liga sa tim imenom vec postoji</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.LeagueController.Delete(System.Int32)">
+            <summary>
+            Brise ligu
+            </summary>
+            <response code="201">Brise Ligu</response>
+            <response code="404">Liga sa tim id-om ne postoji</response>
+            <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.PlayerController.Get(Application.Searches.PlayerSearch)">
+             <summary>
+             Dohvata igrace uz mogucnost pretrage
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET
+                 {
+                    "FirstName": "Filip",
+                    "LastName": "Petrovic",
+                    "Email": "email@gmail.com",
+                    "CityId": 1,
+                    "ClubId": 2,
+                    "PositionId"3
+                 }
+            
+             </remarks>
+             <response code="200">Vraca trazene igrace</response>
+             <response code="500">Greska na serveru</response>
+        </member>
+        <member name="M:Api.Controllers.PlayerController.Get(System.Int32)">
+            <summary>
+            Dohvata igraca po id-u.
+            </summary>
+            <response code="200">Vraca trazenog igraca</response>
+            <response code="404">Ako ne postoji igrac sa tim id-om</response> 
+            <response code="500">Serverska greska</response>
+        </member>
+        <member name="M:Api.Controllers.PlayerController.Post(Application.DataTransfer.PlayerDto)">
+             <summary>
+             Dodavanje novog igraca
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST
+                 {
+                    "FirstName": "Filip",
+                    "LastName": "Petrovic",
+                    "Email": "email@gmail.com",
+                    "CityId": 1,
+                    "ClubId": 2,
+                    "PositionId"3
+                 }
+            
+             </remarks>
+             <response code="201">Dodaje novog igraca</response>
+             <response code="500">Serverska greska</response>
+        </member>
+        <member name="M:Api.Controllers.PlayerController.Put(System.Int32,Application.DataTransfer.PlayerDto)">
+             <summary>
+             Izmena postojeceg igraca
+             </summary>
+             <remarks>
+             Sample request:
+            
+                PUT
+                 {
+                    "FirstName": "Filip",
+                    "LastName": "Petrovic",
+                    "Email": "email@gmail.com",
+                    "CityId": 1,
+                    "ClubId": 2,
+                    "PositionId"3
+                 }
+            
+             </remarks>
+             <response code="201">Izmena Igraca</response>
+             <response code="404">Igrac sa tim id-om ne postoji</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.PlayerController.Delete(System.Int32)">
+            <summary>
+            Brise igraca
+            </summary>
+            <response code="201">Brise igraca</response>
+            <response code="404">igrac sa tim id-om ne postoji</response>
+            <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.PositionController.Get(Application.Searches.PositionSearch)">
+             <summary>
+             Dohvata sve pozicije, uz mogucnost pretrage
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET
+                 {
+                    "Name": "Sredina"
+                 }
+            
+             </remarks>
+             <response code="200">Vraca trazene pozicije</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.PositionController.Get(System.Int32)">
+            <summary>
+            Dohvata jednu poziciju
+            </summary>
+            <response code="200">Vraca trazenu poziciju</response>
+            <response code="404">Trazena pozicija ne postoji</response>
+            <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.PositionController.Post(Application.DataTransfer.PositionDto)">
+             <summary>
+             Dodavanje nove pozicije
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST
+                 {
+                    "Name":"Napadac"
+                 }
+            
+             </remarks>
+             <response code="201">Dodaje novu poziciju</response>
+             <response code="409">Pozicija vec postoji</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.PositionController.Put(System.Int32,Application.DataTransfer.PositionDto)">
+             <summary>
+             Menja postojecu poziciju
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT
+                 {
+                    "Name":"odbrana"
+                 }
+            
+             </remarks>
+             <response code="201">Menja poziciju</response>
+             <response code="404">Pozicija sa tim id-om ne postoji</response>
+             <response code="409">Pozicija vec postoji</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.PositionController.Delete(System.Int32)">
+            <summary>
+            Brise poziciju
+            </summary>
+            <response code="201">Brise poziciju</response>
+            <response code="404">Pozicija ne postoji</response>
+            <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.RefereeController.Get(Application.Searches.RefereeSearch)">
+             <summary>
+             Dohvata sve sudije, uz mogucnost pretrage
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET
+                 {
+                    "FirstName": "Filip",
+                    "LastName": "Petrovic"
+                 }
+            
+             </remarks>
+             <response code="200">Vraca trazene sudije</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.RefereeController.Get(System.Int32)">
+            <summary>
+            Dohvata sudiju po id-u.
+            </summary>
+            <response code="200">Vraca trazenog sudiju</response>
+            <response code="404">Ako ne postoji sudija sa tim id-om</response> 
+            <response code="500">Serverska greska</response>
+        </member>
+        <member name="M:Api.Controllers.RefereeController.Post(Application.DataTransfer.RefereeDto)">
+             <summary>
+             Dodavanje novog sudije
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST 
+                 {
+                    "Name": "Zona istok",
+                    "Level": 4,
+                    "ReferesId": [1,2,5]
+                 }
+            
+             </remarks>
+             <response code="201">Dodaje novu ligu</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.RefereeController.Put(System.Int32,Application.DataTransfer.RefereeDto)">
+             <summary>
+             Izmena postojeceg sudije
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT
+                 {
+                    "FirstName": "Filip",
+                    "LastName": "Petrovic"
+                 }
+            
+             </remarks>
+             <response code="201">Izmena sudije</response>
+             <response code="404">Sudija sa tim id-om ne postoji</response>
+             <response code="500">Serverska greska</response> 
+        </member>
+        <member name="M:Api.Controllers.RefereeController.Delete(System.Int32)">
+            <summary>
+            Brise sudiju
+            </summary>
+            <response code="201">Brise sudiju</response>
+            <response code="404">Sudija sa tim id-om ne postoji</response>
+            <response code="500">Serverska greska</response> 
+        </member>
+    </members>
+</doc>

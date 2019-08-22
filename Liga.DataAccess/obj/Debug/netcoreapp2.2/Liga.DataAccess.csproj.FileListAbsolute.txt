@@ -1,0 +1,14 @@
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\bin\Debug\netcoreapp2.2\Liga.DataAccess.deps.json
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\bin\Debug\netcoreapp2.2\Liga.DataAccess.dll
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\obj\Debug\netcoreapp2.2\Liga.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\obj\Debug\netcoreapp2.2\Liga.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\obj\Debug\netcoreapp2.2\Liga.DataAccess.AssemblyInfo.cs
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\bin\Debug\netcoreapp2.2\Liga.DataAccess.runtimeconfig.json
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\bin\Debug\netcoreapp2.2\Liga.DataAccess.runtimeconfig.dev.json
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\obj\Debug\netcoreapp2.2\Liga.DataAccess.csprojAssemblyReference.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\bin\Debug\netcoreapp2.2\Liga.DataAccess.pdb
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\bin\Debug\netcoreapp2.2\Liga.Domain.dll
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\bin\Debug\netcoreapp2.2\Liga.Domain.pdb
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\obj\Debug\netcoreapp2.2\Liga.DataAccess.csproj.CopyComplete
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\obj\Debug\netcoreapp2.2\Liga.DataAccess.dll
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.DataAccess\obj\Debug\netcoreapp2.2\Liga.DataAccess.pdb

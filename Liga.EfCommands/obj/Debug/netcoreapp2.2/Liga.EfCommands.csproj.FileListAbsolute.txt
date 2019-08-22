@@ -1,0 +1,16 @@
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\bin\Debug\netcoreapp2.2\Liga.EfCommands.deps.json
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\bin\Debug\netcoreapp2.2\Liga.EfCommands.dll
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\bin\Debug\netcoreapp2.2\Liga.EfCommands.pdb
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\obj\Debug\netcoreapp2.2\Liga.EfCommands.csprojAssemblyReference.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\obj\Debug\netcoreapp2.2\Liga.EfCommands.csproj.CoreCompileInputs.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\obj\Debug\netcoreapp2.2\Liga.EfCommands.AssemblyInfoInputs.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\obj\Debug\netcoreapp2.2\Liga.EfCommands.AssemblyInfo.cs
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\obj\Debug\netcoreapp2.2\Liga.EfCommands.dll
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\obj\Debug\netcoreapp2.2\Liga.EfCommands.pdb
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\bin\Debug\netcoreapp2.2\Liga.DataAccess.dll
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\bin\Debug\netcoreapp2.2\Liga.Domain.dll
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\bin\Debug\netcoreapp2.2\Liga.DataAccess.pdb
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\bin\Debug\netcoreapp2.2\Liga.Domain.pdb
+C:\Users\Filip\source\repos\FudbalskaLiga\Liga.EfCommands\obj\Debug\netcoreapp2.2\Liga.EfCommands.csproj.CopyComplete

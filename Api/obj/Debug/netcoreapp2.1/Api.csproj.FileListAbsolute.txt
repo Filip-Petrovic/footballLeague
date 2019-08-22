@@ -1,0 +1,14 @@
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\bin\Debug\netcoreapp2.1\Api.deps.json
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\bin\Debug\netcoreapp2.1\Api.runtimeconfig.json
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\bin\Debug\netcoreapp2.1\Api.runtimeconfig.dev.json
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\bin\Debug\netcoreapp2.1\Api.dll
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\obj\Debug\netcoreapp2.1\Api.csprojAssemblyReference.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\obj\Debug\netcoreapp2.1\Api.csproj.CoreCompileInputs.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\obj\Debug\netcoreapp2.1\Api.RazorAssemblyInfo.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\obj\Debug\netcoreapp2.1\Api.RazorAssemblyInfo.cs
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\obj\Debug\netcoreapp2.1\Api.AssemblyInfoInputs.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\obj\Debug\netcoreapp2.1\Api.AssemblyInfo.cs
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\obj\Debug\netcoreapp2.1\Api.RazorTargetAssemblyInfo.cache
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\bin\Debug\netcoreapp2.1\Api.pdb
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\obj\Debug\netcoreapp2.1\Api.dll
+C:\Users\Filip\source\repos\FudbalskaLiga\Api\obj\Debug\netcoreapp2.1\Api.pdb
