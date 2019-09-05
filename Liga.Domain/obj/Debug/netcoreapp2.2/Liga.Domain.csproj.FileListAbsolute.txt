@@ -7,3 +7,12 @@ C:\Users\Filip\source\repos\FudbalskaLiga\Liga.Domain\bin\Debug\netcoreapp2.2\Li
 C:\Users\Filip\source\repos\FudbalskaLiga\Liga.Domain\bin\Debug\netcoreapp2.2\Liga.Domain.pdb
 C:\Users\Filip\source\repos\FudbalskaLiga\Liga.Domain\obj\Debug\netcoreapp2.2\Liga.Domain.dll
 C:\Users\Filip\source\repos\FudbalskaLiga\Liga.Domain\obj\Debug\netcoreapp2.2\Liga.Domain.pdb
+C:\Users\Filip\Documents\GitHub\proba\Liga.Domain\bin\Debug\netcoreapp2.2\Liga.Domain.deps.json
+C:\Users\Filip\Documents\GitHub\proba\Liga.Domain\bin\Debug\netcoreapp2.2\Liga.Domain.dll
+C:\Users\Filip\Documents\GitHub\proba\Liga.Domain\bin\Debug\netcoreapp2.2\Liga.Domain.pdb
+C:\Users\Filip\Documents\GitHub\proba\Liga.Domain\obj\Debug\netcoreapp2.2\Liga.Domain.csprojAssemblyReference.cache
+C:\Users\Filip\Documents\GitHub\proba\Liga.Domain\obj\Debug\netcoreapp2.2\Liga.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Filip\Documents\GitHub\proba\Liga.Domain\obj\Debug\netcoreapp2.2\Liga.Domain.AssemblyInfoInputs.cache
+C:\Users\Filip\Documents\GitHub\proba\Liga.Domain\obj\Debug\netcoreapp2.2\Liga.Domain.AssemblyInfo.cs
+C:\Users\Filip\Documents\GitHub\proba\Liga.Domain\obj\Debug\netcoreapp2.2\Liga.Domain.dll
+C:\Users\Filip\Documents\GitHub\proba\Liga.Domain\obj\Debug\netcoreapp2.2\Liga.Domain.pdb

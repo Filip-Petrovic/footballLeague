@@ -7,3 +7,12 @@ C:\Users\Filip\source\repos\FudbalskaLiga\Application\obj\Debug\netcoreapp2.2\Ap
 C:\Users\Filip\source\repos\FudbalskaLiga\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfo.cs
 C:\Users\Filip\source\repos\FudbalskaLiga\Application\obj\Debug\netcoreapp2.2\Application.dll
 C:\Users\Filip\source\repos\FudbalskaLiga\Application\obj\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Filip\Documents\GitHub\proba\Application\bin\Debug\netcoreapp2.2\Application.deps.json
+C:\Users\Filip\Documents\GitHub\proba\Application\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Filip\Documents\GitHub\proba\Application\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Filip\Documents\GitHub\proba\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache
+C:\Users\Filip\Documents\GitHub\proba\Application\obj\Debug\netcoreapp2.2\Application.csproj.CoreCompileInputs.cache
+C:\Users\Filip\Documents\GitHub\proba\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfoInputs.cache
+C:\Users\Filip\Documents\GitHub\proba\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfo.cs
+C:\Users\Filip\Documents\GitHub\proba\Application\obj\Debug\netcoreapp2.2\Application.dll
+C:\Users\Filip\Documents\GitHub\proba\Application\obj\Debug\netcoreapp2.2\Application.pdb

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Commands;
+using Liga.DataAccess;
+using Liga.EfCommands;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -32,7 +35,51 @@ namespace MVC
             });
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddDbContext<LigaContext>();
+
+            //referee
+            services.AddTransient<IGetRefereeCommand, EFGetRefereeCommand>();
+            services.AddTransient<IGetRefereesCommand, EfGetRefereesCommand>();
+            services.AddTransient<IEditRefereeCommand, EfEditRefereeCommand>();
+            services.AddTransient<IDeleteRefereeCommand, EfDeleteRefereeCommand>();
+            services.AddTransient<IAddRefereeCommand, EfAddRefereeCommand>();
+
+            //position
+            services.AddTransient<IGetPositionCommand, EfGetPositionCommand>();
+            services.AddTransient<IGetPositionsCommand, EfGetPositionsCommand>();
+            services.AddTransient<IEditPositionCommand, EfEditPositionCommand>();
+            services.AddTransient<IDeletePositionCommand, EfDeletePositionCommand>();
+            services.AddTransient<IAddPositionCommand, EfAddPositionCommand>();
+
+            //player 
+            services.AddTransient<IGetPlayerCommand, EfGetPlayerCommand>();
+            services.AddTransient<IGetPlayersCommand, EfGetPlayersCommand>();
+            services.AddTransient<IEditPlayerCommand, EfEditPlayerCommand>();
+            services.AddTransient<IDeletePlayerCommand, EfDeletePlayerCommand>();
+            services.AddTransient<IAddPlayerCommand, EfAddPlayerCommand>();
+
+            //league
+            services.AddTransient<IGetLeagueCommand, EfGetLeagueCommand>();
+            services.AddTransient<IGetLeaguesCommand, EfGetLeaguesCommand>();
+            services.AddTransient<IEditLeagueCommand, EfEditLeagueCommand>();
+            services.AddTransient<IDeleteLeagueCommand, EfDeleteLeagueCommand>();
+            services.AddTransient<IAddLeagueCommand, EfAddLeagueCommand>();
+
+            //club
+
+            services.AddTransient<IGetClubCommand, EfGetClubCommand>();
+            services.AddTransient<IGetClubsCommand, EfGetClubsCommand>();
+            services.AddTransient<IEditClubCommand, EfEditClubCommand>();
+            services.AddTransient<IDeleteClubCommand, EfDeleteClubCommand>();
+            services.AddTransient<IAddClubCommand, EfAddClubCommand>();
+
+            services.AddTransient<IGetCityCommand, EfGetCityCommand>();
+            services.AddTransient<IGetCitiesCommand, EfGetCitiesCommand>();
+            services.AddTransient<IEditCityCommand, EfEditCityCommand>();
+            services.AddTransient<IDeleteCityCommand, EfDeleteCityCommand>();
+            services.AddTransient<IAddCityCommand, EfAddCityCommand>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +92,7 @@ namespace MVC
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
