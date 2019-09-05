@@ -96,9 +96,9 @@ namespace Api.Controllers
         ///
         ///     POST 
         ///     {
-        ///        "FirstName": "Filip",
-        ///        "LastName": "Petrovic",
-        ///        "RefereesId": [1,2,5]
+        ///        "Name": "Zona istok",
+        ///        "Level": 4,
+        ///        "ReferesId": [1,2,5]
         ///     }
         ///
         /// </remarks>
@@ -139,8 +139,9 @@ namespace Api.Controllers
         ///
         ///     PUT 
         ///     {
-        ///        "FirstName": "Filip",
-        ///        "LastName": "Petrovic"
+        ///        "Name": "Zona istok",
+        ///        "Level": 4,
+        ///        "ReferesId": [1,2,5]
         ///     }
         ///
         /// </remarks>

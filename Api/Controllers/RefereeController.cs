@@ -97,9 +97,9 @@ namespace Api.Controllers
         ///
         ///     POST 
         ///     {
-        ///        "Name": "Zona istok",
-        ///        "Level": 4,
-        ///        "ReferesId": [1,2,5]
+        ///        "FirstName": "Filip",
+        ///        "LastName": "Petrovic",
+        ///        "LeaguesId": [1,2,3]
         ///     }
         ///
         /// </remarks>
@@ -129,7 +129,8 @@ namespace Api.Controllers
         ///     PUT
         ///     {
         ///        "FirstName": "Filip",
-        ///        "LastName": "Petrovic"
+        ///        "LastName": "Petrovic",
+        ///        "LeaguesId": [1,2,3]
         ///     }
         ///
         /// </remarks>

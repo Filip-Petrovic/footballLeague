@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Commands;
+using Application.DataTransfer;
 using Application.Exceptions;
 using Application.Searches;
 using Microsoft.AspNetCore.Http;
@@ -18,15 +19,21 @@ namespace MVC.Controllers
         private IAddClubCommand _addClubCommand;
         private IEditClubCommand _editClubCommand;
         private IDeleteClubCommand _deleteClubCommand;
+        private IGetCitiesCommand _getCitiesCommand;
+        private IGetLeaguesCommand _getLeaguesCommand;
 
-        public ClubController(IGetClubCommand getClubCommand, IGetClubsCommand getClubsCommand, IAddClubCommand addClubCommand, IEditClubCommand editClubCommand, IDeleteClubCommand deleteClubCommand)
+        public ClubController(IGetClubCommand getClubCommand, IGetClubsCommand getClubsCommand, IAddClubCommand addClubCommand, IEditClubCommand editClubCommand, IDeleteClubCommand deleteClubCommand, IGetCitiesCommand getCitiesCommand, IGetLeaguesCommand getLeaguesCommand)
         {
             _getClubCommand = getClubCommand;
             _getClubsCommand = getClubsCommand;
             _addClubCommand = addClubCommand;
             _editClubCommand = editClubCommand;
             _deleteClubCommand = deleteClubCommand;
+            _getCitiesCommand = getCitiesCommand;
+            _getLeaguesCommand = getLeaguesCommand;
         }
+
+
 
         // GET: Club
         public ActionResult Index([FromQuery] ClubSearch clubSearch)
@@ -63,41 +70,78 @@ namespace MVC.Controllers
         // GET: Club/Create
         public ActionResult Create()
         {
-            return View();
+            try
+            {
+                ViewBag.Cities = _getCitiesCommand.Execute(new CitySearch());
+                ViewBag.Leagues = _getLeaguesCommand.Execute(new LeagueSearch());
+                return View();
+            }
+            catch (Exception)
+            {
+                return RedirectToAction(nameof(Index));
+            }
         }
 
         // POST: Club/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(ClubDto club)
         {
             try
             {
-                // TODO: Add insert logic here
-
+                var clubInsert = new ClubDto
+                {
+                    Name = club.Name,
+                    CityId = club.CityId,
+                    LeagueId = club.LeagueId
+                };
+                _addClubCommand.Execute(clubInsert);
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return RedirectToAction(nameof(Index));
             }
         }
 
         // GET: Club/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            try
+            {
+                var Club = _getClubCommand.Execute(id);
+                ViewBag.Cities = _getCitiesCommand.Execute(new CitySearch());
+                ViewBag.Leagues = _getLeaguesCommand.Execute(new LeagueSearch());
+                return View(new ClubDto
+                {
+                    LeagueId = Club.LeagueId,
+                    CityId = Club.CityId,
+                    Id = Club.Id,
+                    Name = Club.Name
+                });
+            }
+            catch (Exception)
+            {
+                return RedirectToAction(nameof(Index));
+            }
         }
 
         // POST: Club/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, ClubDto clubDto)
         {
             try
             {
                 // TODO: Add update logic here
-
+                var clubEdit = new ClubDto
+                {
+                    Id = id,
+                    LeagueId = clubDto.LeagueId,
+                    Name = clubDto.Name,
+                    CityId = clubDto.CityId
+                };
+                _editClubCommand.Execute(clubEdit);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -109,24 +153,21 @@ namespace MVC.Controllers
         // GET: Club/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
-        }
-
-        // POST: Club/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
             try
             {
-                // TODO: Add delete logic here
-
+                _deleteClubCommand.Execute(id);
+                TempData["success"] = "Movie successfully deleted.";
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (EntityNotFoundException)
             {
-                return View();
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception)
+            {
+                return RedirectToAction(nameof(Index));
             }
         }
+
     }
 }

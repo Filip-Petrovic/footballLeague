@@ -44,7 +44,7 @@ namespace Api.Controllers
         ///        "Email": "email@gmail.com",
         ///        "CityId": 1,
         ///        "ClubId": 2,
-        ///        "PositionId"3
+        ///        "PositionId": 3
         ///     }
         ///
         /// </remarks>
@@ -103,7 +103,7 @@ namespace Api.Controllers
         ///        "Email": "email@gmail.com",
         ///        "CityId": 1,
         ///        "ClubId": 2,
-        ///        "PositionId"3
+        ///        "PositionId": 3
         ///     }
         ///
         /// </remarks>
@@ -137,7 +137,7 @@ namespace Api.Controllers
         ///        "Email": "email@gmail.com",
         ///        "CityId": 1,
         ///        "ClubId": 2,
-        ///        "PositionId"3
+        ///        "PositionId":3
         ///     }
         ///
         /// </remarks>

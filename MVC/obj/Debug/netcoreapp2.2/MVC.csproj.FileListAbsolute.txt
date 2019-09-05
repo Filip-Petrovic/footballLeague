@@ -41,3 +41,6 @@ C:\Users\Filip\Documents\GitHub\proba\MVC\obj\Debug\netcoreapp2.2\MVC.dll
 C:\Users\Filip\Documents\GitHub\proba\MVC\obj\Debug\netcoreapp2.2\MVC.pdb
 C:\Users\Filip\Documents\GitHub\proba\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Club\Index.cshtml.g.cs
 C:\Users\Filip\Documents\GitHub\proba\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Club\Details.cshtml.g.cs
+C:\Users\Filip\Documents\GitHub\proba\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Club\Delete.cshtml.g.cs
+C:\Users\Filip\Documents\GitHub\proba\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Club\Create.cshtml.g.cs
+C:\Users\Filip\Documents\GitHub\proba\MVC\obj\Debug\netcoreapp2.2\Razor\Views\Club\Edit.cshtml.g.cs
